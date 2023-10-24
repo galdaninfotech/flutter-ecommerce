@@ -2,11 +2,7 @@ import 'bloc/dashboard_container_bloc.dart';
 import 'models/dashboard_container_model.dart';
 import 'package:flutter/material.dart';
 import 'package:galdan_s_application9/core/app_export.dart';
-import 'package:galdan_s_application9/presentation/account_page/account_page.dart';
-import 'package:galdan_s_application9/presentation/cart_page/cart_page.dart';
 import 'package:galdan_s_application9/presentation/dashboard_page/dashboard_page.dart';
-import 'package:galdan_s_application9/presentation/explore_page/explore_page.dart';
-import 'package:galdan_s_application9/presentation/offer_screen_page/offer_screen_page.dart';
 import 'package:galdan_s_application9/widgets/custom_bottom_bar.dart';
 
 // ignore_for_file: must_be_immutable
@@ -54,13 +50,13 @@ class DashboardContainerScreen extends StatelessWidget {
       case BottomBarEnum.Home:
         return AppRoutes.dashboardPage;
       case BottomBarEnum.Explore:
-        return AppRoutes.explorePage;
+        return "/";
       case BottomBarEnum.Cart:
-        return AppRoutes.cartPage;
+        return "/";
       case BottomBarEnum.Offer:
-        return AppRoutes.offerScreenPage;
+        return "/";
       case BottomBarEnum.Account:
-        return AppRoutes.accountPage;
+        return "/";
       default:
         return "/";
     }
@@ -74,14 +70,6 @@ class DashboardContainerScreen extends StatelessWidget {
     switch (currentRoute) {
       case AppRoutes.dashboardPage:
         return DashboardPage.builder(context);
-      case AppRoutes.explorePage:
-        return ExplorePage.builder(context);
-      case AppRoutes.cartPage:
-        return CartPage.builder(context);
-      case AppRoutes.offerScreenPage:
-        return OfferScreenPage.builder(context);
-      case AppRoutes.accountPage:
-        return AccountPage.builder(context);
       default:
         return DefaultWidget();
     }
