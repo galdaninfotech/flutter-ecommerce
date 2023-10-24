@@ -43,31 +43,31 @@ class AppNavigationScreen extends StatelessWidget {
                           children: [
                             _buildScreenTitle(
                               context,
-                              loginText: "Splash Screen".tr,
+                              userLoginText: "Splash Screen".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.splashScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Login".tr,
+                              userLoginText: "Login".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.loginScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Register".tr,
+                              userLoginText: "Register".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.registerScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Dashboard - Container".tr,
+                              userLoginText: "Dashboard - Container".tr,
                               onTapScreenTitle: () => onTapScreenTitle(
                                   AppRoutes.dashboardContainerScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Profile".tr,
+                              userLoginText: "Profile".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.profileScreen),
                             ),
@@ -142,7 +142,7 @@ class AppNavigationScreen extends StatelessWidget {
   /// Common widget
   Widget _buildScreenTitle(
     BuildContext context, {
-    required String loginText,
+    required String userLoginText,
     Function? onTapScreenTitle,
   }) {
     return GestureDetector(
@@ -161,7 +161,7 @@ class AppNavigationScreen extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.h),
                 child: Text(
-                  loginText,
+                  userLoginText,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0XFF000000),
