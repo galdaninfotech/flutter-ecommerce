@@ -43,201 +43,33 @@ class AppNavigationScreen extends StatelessWidget {
                           children: [
                             _buildScreenTitle(
                               context,
-                              loginText: "Splash Screen".tr,
+                              userLoginText: "Splash Screen".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.splashScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Login".tr,
+                              userLoginText: "Login".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.loginScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Register".tr,
+                              userLoginText: "Register".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.registerScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Dashboard - Container".tr,
+                              userLoginText: "Dashboard - Container".tr,
                               onTapScreenTitle: () => onTapScreenTitle(
                                   AppRoutes.dashboardContainerScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Super Flash Sale".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.superFlashSaleScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Favorite Product".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.favoriteProductScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Product Detail".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.productDetailScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Review Product".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.reviewProductScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Write Review Fill".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.writeReviewFillScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Notification".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.notificationScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Notification Offer".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.notificationOfferScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Notification Feed".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.notificationFeedScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Notification Activity".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.notificationActivityScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Search".tr,
-                              onTapScreenTitle: () =>
-                                  onTapScreenTitle(AppRoutes.searchScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Search Result".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.searchResultScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Search Result No Data Found".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.searchResultNoDataFoundScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "List Category".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.listCategoryScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Sort By".tr,
-                              onTapScreenTitle: () =>
-                                  onTapScreenTitle(AppRoutes.sortByScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Filter".tr,
-                              onTapScreenTitle: () =>
-                                  onTapScreenTitle(AppRoutes.filterScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Ship To".tr,
-                              onTapScreenTitle: () =>
-                                  onTapScreenTitle(AppRoutes.shipToScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Payment Method".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.paymentMethodScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Choose Credit Or Debit Card".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.chooseCreditOrDebitCardScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Success Screen".tr,
-                              onTapScreenTitle: () =>
-                                  onTapScreenTitle(AppRoutes.successScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Profile".tr,
+                              userLoginText: "Profile".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.profileScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Change Password".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.changePasswordScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Order".tr,
-                              onTapScreenTitle: () =>
-                                  onTapScreenTitle(AppRoutes.orderScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Order Details".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.orderDetailsScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Add Address".tr,
-                              onTapScreenTitle: () =>
-                                  onTapScreenTitle(AppRoutes.addAddressScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Address".tr,
-                              onTapScreenTitle: () =>
-                                  onTapScreenTitle(AppRoutes.addressScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Add Payment".tr,
-                              onTapScreenTitle: () =>
-                                  onTapScreenTitle(AppRoutes.addPaymentScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Credit Card And Debit".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.creditCardAndDebitScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Add Card".tr,
-                              onTapScreenTitle: () =>
-                                  onTapScreenTitle(AppRoutes.addCardScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
-                              loginText: "Lailyfa Febrina Card".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.lailyfaFebrinaCardScreen),
                             ),
                           ],
                         ),
@@ -310,7 +142,7 @@ class AppNavigationScreen extends StatelessWidget {
   /// Common widget
   Widget _buildScreenTitle(
     BuildContext context, {
-    required String loginText,
+    required String userLoginText,
     Function? onTapScreenTitle,
   }) {
     return GestureDetector(
@@ -329,7 +161,7 @@ class AppNavigationScreen extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.h),
                 child: Text(
-                  loginText,
+                  userLoginText,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0XFF000000),

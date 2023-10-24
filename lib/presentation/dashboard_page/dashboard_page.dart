@@ -14,7 +14,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:galdan_s_application9/core/app_export.dart';
 import 'package:galdan_s_application9/widgets/app_bar/appbar_leading_image.dart';
-import 'package:galdan_s_application9/widgets/app_bar/appbar_subtitle_one.dart';
+import 'package:galdan_s_application9/widgets/app_bar/appbar_subtitle.dart';
 import 'package:galdan_s_application9/widgets/app_bar/appbar_trailing_image.dart';
 import 'package:galdan_s_application9/widgets/app_bar/custom_app_bar.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -95,7 +95,7 @@ class DashboardPage extends StatelessWidget {
         leading: AppbarLeadingImage(
             imagePath: ImageConstant.imgSearch,
             margin: EdgeInsets.only(left: 32.h, top: 20.v, bottom: 20.v)),
-        title: AppbarSubtitleOne(
+        title: AppbarSubtitle(
             text: "lbl_search_product".tr,
             margin: EdgeInsets.only(left: 8.h),
             onTap: () {
@@ -301,35 +301,13 @@ class DashboardPage extends StatelessWidget {
             }));
   }
 
-  /// Navigates to the searchScreen when the action is triggered.
-  onTapSearchProduct(BuildContext context) {
-    NavigatorService.pushNamed(AppRoutes.searchScreen);
-  }
+  onTapSearchProduct(BuildContext context) {}
+  onTapDownload(BuildContext context) {}
+  onTapImgNotificationIcon(BuildContext context) {}
+  onTapTxtMoreCategoryLink(BuildContext context) {}
+  onTapFlashSaleHeader(BuildContext context) {}
 
-  /// Navigates to the favoriteProductScreen when the action is triggered.
-  onTapDownload(BuildContext context) {
-    NavigatorService.pushNamed(AppRoutes.favoriteProductScreen);
-  }
-
-  /// Navigates to the notificationScreen when the action is triggered.
-  onTapImgNotificationIcon(BuildContext context) {
-    NavigatorService.pushNamed(AppRoutes.notificationScreen);
-  }
-
-  /// Navigates to the listCategoryScreen when the action is triggered.
-  onTapTxtMoreCategoryLink(BuildContext context) {
-    NavigatorService.pushNamed(AppRoutes.listCategoryScreen);
-  }
-
-  /// Navigates to the superFlashSaleScreen when the action is triggered.
-  onTapFlashSaleHeader(BuildContext context) {
-    NavigatorService.pushNamed(AppRoutes.superFlashSaleScreen);
-  }
-
-  /// Navigates to the productDetailScreen when the action is triggered.
   onTapProductItem(BuildContext context) {
-    NavigatorService.pushNamed(
-      AppRoutes.productDetailScreen,
-    );
+    // TODO: implement Actions
   }
 }

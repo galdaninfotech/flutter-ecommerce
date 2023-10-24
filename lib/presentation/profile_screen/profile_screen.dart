@@ -3,7 +3,7 @@ import 'models/profile_model.dart';
 import 'package:flutter/material.dart';
 import 'package:galdan_s_application9/core/app_export.dart';
 import 'package:galdan_s_application9/widgets/app_bar/appbar_leading_image.dart';
-import 'package:galdan_s_application9/widgets/app_bar/appbar_subtitle.dart';
+import 'package:galdan_s_application9/widgets/app_bar/appbar_title.dart';
 import 'package:galdan_s_application9/widgets/app_bar/custom_app_bar.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -91,7 +91,7 @@ class ProfileScreen extends StatelessWidget {
             onTap: () {
               onTapArrowLeft(context);
             }),
-        title: AppbarSubtitle(
+        title: AppbarTitle(
             text: "lbl_profile".tr, margin: EdgeInsets.only(left: 12.h)));
   }
 
@@ -140,10 +140,7 @@ class ProfileScreen extends StatelessWidget {
     NavigatorService.goBack();
   }
 
-  /// Navigates to the changePasswordScreen when the action is triggered.
   onTapProfileDetailOption(BuildContext context) {
-    NavigatorService.pushNamed(
-      AppRoutes.changePasswordScreen,
-    );
+    // TODO: implement Actions
   }
 }

@@ -3,12 +3,6 @@ import 'package:galdan_s_application9/core/app_export.dart';
 
 class AppDecoration {
   // Fill decorations
-  static BoxDecoration get fillBlue => BoxDecoration(
-        color: appTheme.blue50,
-      );
-  static BoxDecoration get fillIndigoA => BoxDecoration(
-        color: appTheme.indigoA200,
-      );
   static BoxDecoration get fillOnPrimaryContainer => BoxDecoration(
         color: theme.colorScheme.onPrimaryContainer.withOpacity(1),
       );
@@ -30,20 +24,10 @@ class AppDecoration {
           width: 1.h,
         ),
       );
-  static BoxDecoration get outlinePrimary => BoxDecoration(
-        color: theme.colorScheme.onPrimaryContainer.withOpacity(1),
-        border: Border.all(
-          color: theme.colorScheme.primary.withOpacity(1),
-          width: 1.h,
-        ),
-      );
 }
 
 class BorderRadiusStyle {
   // Circle borders
-  static BorderRadius get circleBorder24 => BorderRadius.circular(
-        24.h,
-      );
   static BorderRadius get circleBorder36 => BorderRadius.circular(
         36.h,
       );
@@ -51,9 +35,6 @@ class BorderRadiusStyle {
   // Rounded borders
   static BorderRadius get roundedBorder5 => BorderRadius.circular(
         5.h,
-      );
-  static BorderRadius get roundedBorder8 => BorderRadius.circular(
-        8.h,
       );
 }
 
